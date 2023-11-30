@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Whisperer</title>
+  </head>
+  <body>
+    <div class="container">
+      <video autoplay loop muted>
+        <source src="pixel.mp4" type="video/mp4" />
+      </video>
+      <div class="text-box">
+        <h1>Shhh!</h1>
+      </div>
+
+      <div class="text-box11">
+        <h1>
+          <a href="#">Home</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="login.html">Login</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#">Sign-up</a> &nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#">Contact</a>
+        </h1>
+      </div>
+    </div>
+
+    <div class="container2">
+      <video autoplay loop muted>
+        <source src="fire2.mp4" type="video/mp4" />
+      </video>
+      <div class="text-box2">
+        <h1>To the Whisperer</h1>
+      </div>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
